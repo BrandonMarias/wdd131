@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album – Brandon Marias</title>
+    <meta name="description" content="Temple Album. A photo gallery of temples in Mexico for WDD 131 – Dynamic Web Fundamentals.">
+    <meta name="author" content="Brandon Marias">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <span class="site-title">Temple Album</span>
+        <button id="menu-btn" class="menu-btn" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">☰</button>
+        <nav id="main-nav">
+            <a href="#">Home</a>
+            <a href="/">Old</a>
+            <a href="/">New</a>
+            <a href="/">Large</a>
+            <a href="/">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="gallery">
+            <figure>
+                <img src="images/temples/mexico.jpg" alt="Mexico City Temple">
+                <figcaption>Mexico City</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/guadalajara.jpg" alt="Guadalajara Mexico Temple">
+                <figcaption>Guadalajara, Jalisco</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/monterrey.jpg" alt="Monterrey Mexico Temple">
+                <figcaption>Monterrey, Nuevo León</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/merida.jpg" alt="Mérida Mexico Temple">
+                <figcaption>Mérida, Yucatán</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/tijuana.jpg" alt="Tijuana Mexico Temple">
+                <figcaption>Tijuana, Baja California</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/villahermosa.jpg" alt="Villahermosa Mexico Temple">
+                <figcaption>Villahermosa, Tabasco</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/puebla.jpg" alt="Puebla Mexico Temple">
+                <figcaption>Puebla</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/oaxaca.jpg" alt="Oaxaca Mexico Temple">
+                <figcaption>Oaxaca</figcaption>
+            </figure>
+            <figure>
+                <img src="images/temples/veracruz.jpg" alt="Veracruz Mexico Temple">
+                <figcaption>Veracruz</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Brandon Marias · Cuernavaca, Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* Larger view (min-width: 768px): loaded with a media attribute in temples.html */
+
+.menu-btn {
+    display: none;
+}
+
+nav,
+nav.open {
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    gap: 20px;
+}
+
+header {
+    padding: 16px 32px;
+}
+
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+}

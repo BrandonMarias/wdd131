@@ -1,0 +1,99 @@
+/* Mobile first: this file styles the single-column view */
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #222;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rebeccapurple;
+    color: #fff;
+    padding: 12px 16px;
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    color: #d9b8ff;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+figcaption {
+    margin-top: 6px;
+    font-size: 14px;
+    color: rebeccapurple;
+}
+
+footer {
+    background: rebeccapurple;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 4px 0;
+}
