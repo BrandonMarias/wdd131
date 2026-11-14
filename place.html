@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mexico – Country Page – Brandon Marias</title>
+    <meta
+      name="description"
+      content="Mexico country page for WDD 131 – Dynamic Web Fundamentals."
+    />
+    <meta name="author" content="Brandon Marias" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/place.css" />
+    <link
+      rel="stylesheet"
+      href="styles/place-large.css"
+      media="screen and (min-width: 768px)"
+    />
+    <script src="scripts/place.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Mexico</h1>
+    </header>
+
+    <main>
+      <picture class="hero">
+        <source
+          media="(min-width: 768px)"
+          srcset="images/place/chichen-itza-large.webp"
+        />
+        <img
+          src="images/place/chichen-itza-small.webp"
+          alt="Chichén Itzá pyramid under a blue sky"
+          width="800"
+          height="600"
+        />
+      </picture>
+
+      <section class="data">
+        <h2>Data</h2>
+        <dl>
+          <dt>Capital:</dt>
+          <dd>Mexico City</dd>
+          <dt>Population:</dt>
+          <dd>130 million</dd>
+          <dt>Area:</dt>
+          <dd>1,964,375 km²</dd>
+          <dt>Language:</dt>
+          <dd>Spanish</dd>
+          <dt>Currency:</dt>
+          <dd>Mexican peso</dd>
+          <dt>Time Zone:</dt>
+          <dd>UTC−6</dd>
+        </dl>
+      </section>
+
+      <section class="weather">
+        <h2>Weather</h2>
+        <img
+          class="weather-icon"
+          src="images/place/weather-cloud.svg"
+          alt=""
+          width="48"
+          height="48"
+        />
+        <dl>
+          <dt>Temperature:</dt>
+          <dd>8 °C</dd>
+          <dt>Wind Speed:</dt>
+          <dd>15 km/h</dd>
+          <dt>Wind Chill:</dt>
+          <dd id="wind-chill"></dd>
+          <dt>Conditions:</dt>
+          <dd>Partly cloudy</dd>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> Brandon Marias · Cuernavaca,
+        Mexico
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

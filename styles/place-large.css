@@ -1,0 +1,39 @@
+/* Wider view: sections overlay the hero image, Data left and Weather right */
+
+main {
+  grid-template-columns: 1fr 1fr;
+  max-width: 1100px;
+}
+
+.hero,
+section {
+  grid-row: 1;
+}
+
+.hero {
+  grid-column: 1 / -1;
+}
+
+.data {
+  grid-column: 1;
+  align-self: center;
+  justify-self: start;
+  width: 260px;
+  margin: 24px;
+}
+
+.weather {
+  grid-column: 2;
+  align-self: center;
+  justify-self: end;
+  width: 260px;
+  margin: 24px;
+}
+
+.weather-icon {
+  display: none;
+}
+
+.weather h2::after {
+  content: " ⛅";
+}
